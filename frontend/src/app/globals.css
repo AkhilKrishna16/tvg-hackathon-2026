@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS variables ─────────────────────────────────────────────────────────── */
+:root {
+  --bg:           #080812;
+  --surface:      #0e0e1c;
+  --card:         #13132a;
+  --border:       #1c1c38;
+  --accent:       #00d4ff;
+  --success:      #00e676;
+  --warning:      #ffc107;
+  --danger:       #ff1744;
+  --text-primary: #eef0ff;
+  --text-secondary: #6370a0;
+}
+
+/* ── Base reset ────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Custom scrollbar ──────────────────────────────────────────────────────── */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #1c1c38 transparent;
+}
+.scrollbar-thin::-webkit-scrollbar       { width: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track  { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb  { background: #1c1c38; border-radius: 2px; }
+.scrollbar-thin::-webkit-scrollbar-thumb:hover { background: #2a2a4e; }
+
+/* ── Deck.gl tooltip override ──────────────────────────────────────────────── */
+.deck-tooltip {
+  font-family: "Inter", system-ui, sans-serif !important;
+  font-size: 12px !important;
+}
+
+/* ── MapLibre controls dark theme ──────────────────────────────────────────── */
+.maplibregl-ctrl-group {
+  background: rgba(8, 8, 18, 0.9) !important;
+  border: 1px solid #1c1c38 !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(8px);
+}
+.maplibregl-ctrl-group button {
+  color: #8892b0 !important;
+}
+.maplibregl-ctrl-group button:hover {
+  background-color: #13132a !important;
+  color: #00d4ff !important;
+}
+.maplibregl-ctrl-attrib {
+  background: rgba(8, 8, 18, 0.7) !important;
+  color: #6370a0 !important;
+  font-size: 9px !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: #6370a0 !important;
+}

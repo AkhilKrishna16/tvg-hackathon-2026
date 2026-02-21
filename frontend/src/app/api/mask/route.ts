@@ -1,0 +1,12 @@
+import { NextResponse } from "next/server";
+import { sampleMask } from "@/lib/data";
+
+export const dynamic = "force-dynamic";
+
+export async function GET() {
+  try {
+    return NextResponse.json(sampleMask(500));
+  } catch (e) {
+    return NextResponse.json({ error: String(e) }, { status: 500 });
+  }
+}
