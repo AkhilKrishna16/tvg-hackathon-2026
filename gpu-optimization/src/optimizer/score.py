@@ -3,11 +3,20 @@ score.py — Composite scoring engine for substation placement candidates.
 
 Combines four objective functions into a single weighted score map,
 zeros out forbidden cells, and returns both the composite and individual arrays.
+
+Improvements over v1:
+  • Parallel execution (parallel=True by default): all four objectives are submitted
+    to a ThreadPoolExecutor simultaneously. NumPy releases the GIL for heavy
+    numerical operations, and the sustainability objective's network I/O runs
+    concurrently with the CPU-bound objectives — yielding real wall-clock speedup.
+  • score_summary now includes p25/p50/p75 percentiles for richer distribution insight.
+  • _timed() helper cleanly measures per-objective elapsed time.
 """
 
 from __future__ import annotations
 
 import time
+from concurrent.futures import Future, ThreadPoolExecutor
 from typing import Optional, Union
 
 import numpy as np
@@ -20,11 +29,11 @@ except Exception:
     _BACKEND = "numpy"
 
 from .objectives import (
+    backend_name,
     load_relief_score,
     loss_reduction_score,
     redundancy_score,
     sustainability_score,
-    backend_name,
 )
 
 # ---------------------------------------------------------------------------
@@ -51,6 +60,13 @@ def _to_numpy(arr: ArrayLike) -> np.ndarray:
     return np.asarray(arr, dtype=np.float32)
 
 
+def _timed(fn, *args):
+    """Call fn(*args) and return (result, elapsed_seconds)."""
+    t0 = time.perf_counter()
+    result = fn(*args)
+    return result, time.perf_counter() - t0
+
+
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
@@ -61,6 +77,7 @@ def composite_score(
     city_bounds: dict,
     forbidden_mask: Optional[ArrayLike] = None,
     weights: Optional[dict[str, float]] = None,
+    parallel: bool = True,
 ) -> tuple[np.ndarray, dict[str, np.ndarray], dict[str, float]]:
     """
     Compute the weighted composite score across all four objective functions.
@@ -74,13 +91,16 @@ def composite_score(
     city_bounds : dict
         Bounding box with keys {south, north, west, east}.
     forbidden_mask : array-like, shape (500, 500), optional
-        Binary mask; 1 = placeable, 0 = forbidden. If None, all cells are
-        treated as placeable.
+        Binary mask; 1 = placeable, 0 = forbidden. If None, all cells scored.
     weights : dict, optional
         Override one or more default weights. Keys must be a subset of
         {load_relief, loss_reduction, sustainability, redundancy}.
-        Supplied weights are merged with defaults and then re-normalised
-        so they always sum to 1.
+        Supplied weights are merged with defaults and re-normalised to sum=1.
+    parallel : bool, default True
+        When True, all four objectives are evaluated concurrently using a
+        ThreadPoolExecutor (max_workers=4).  NumPy releases the GIL for heavy
+        compute, and the sustainability network request runs truly concurrently,
+        reducing wall-clock time vs. sequential execution.
 
     Returns
     -------
@@ -91,45 +111,45 @@ def composite_score(
     timings : dict[str, float]
         Wall-clock seconds for each scoring step and a "total" entry.
     """
-    # --- Resolve weights ---
+    # --- Resolve and normalise weights ---
     w = {**DEFAULT_WEIGHTS, **(weights or {})}
     total_w = sum(w.values())
     if total_w <= 0:
-        raise ValueError("Weight values must be positive.")
-    w = {k: v / total_w for k, v in w.items()}  # normalise to sum=1
+        raise ValueError("Weight values must be positive (non-zero).")
+    w = {k: v / total_w for k, v in w.items()}
 
     timings: dict[str, float] = {}
     individual: dict[str, np.ndarray] = {}
 
-    # --- Objective 1: Load Relief ---
-    t0 = time.perf_counter()
-    individual["load_relief"] = _to_numpy(
-        load_relief_score(demand_heatmap, existing_substations, city_bounds)
-    )
-    timings["load_relief"] = time.perf_counter() - t0
+    # Map objective names → (function, positional args)
+    objective_fns: dict[str, tuple] = {
+        "load_relief":    (load_relief_score,    (demand_heatmap, existing_substations, city_bounds)),
+        "loss_reduction": (loss_reduction_score, (demand_heatmap, existing_substations, city_bounds)),
+        "sustainability": (sustainability_score, (city_bounds,)),
+        "redundancy":     (redundancy_score,     (existing_substations, city_bounds)),
+    }
 
-    # --- Objective 2: Loss Reduction ---
-    t0 = time.perf_counter()
-    individual["loss_reduction"] = _to_numpy(
-        loss_reduction_score(demand_heatmap, existing_substations, city_bounds)
-    )
-    timings["loss_reduction"] = time.perf_counter() - t0
+    if parallel:
+        # Submit all objectives concurrently; gather results as they complete.
+        with ThreadPoolExecutor(max_workers=4) as executor:
+            futures: dict[str, Future] = {
+                name: executor.submit(_timed, fn, *args)
+                for name, (fn, args) in objective_fns.items()
+            }
+            for name, future in futures.items():
+                result, elapsed = future.result()
+                individual[name] = _to_numpy(result)
+                timings[name] = elapsed
+        # Wall-clock total ≈ slowest parallel task + aggregation below
+        _parallel_wall = max(timings[k] for k in objective_fns)
+    else:
+        for name, (fn, args) in objective_fns.items():
+            result, elapsed = _timed(fn, *args)
+            individual[name] = _to_numpy(result)
+            timings[name] = elapsed
+        _parallel_wall = None
 
-    # --- Objective 3: Sustainability ---
-    t0 = time.perf_counter()
-    individual["sustainability"] = _to_numpy(
-        sustainability_score(city_bounds)
-    )
-    timings["sustainability"] = time.perf_counter() - t0
-
-    # --- Objective 4: Redundancy ---
-    t0 = time.perf_counter()
-    individual["redundancy"] = _to_numpy(
-        redundancy_score(existing_substations, city_bounds)
-    )
-    timings["redundancy"] = time.perf_counter() - t0
-
-    # --- Weighted sum ---
+    # --- Weighted aggregation ---
     t0 = time.perf_counter()
     composite = np.zeros((500, 500), dtype=np.float32)
     for name, arr in individual.items():
@@ -141,7 +161,12 @@ def composite_score(
         composite *= mask_np
     timings["aggregation"] = time.perf_counter() - t0
 
-    timings["total"] = sum(timings.values())
+    if _parallel_wall is not None:
+        # Report wall-clock total (objectives overlapped); not sum of all timings
+        timings["total"] = _parallel_wall + timings["aggregation"]
+    else:
+        timings["total"] = sum(v for k, v in timings.items() if k != "total")
+
     return composite, individual, timings
 
 
@@ -149,19 +174,26 @@ def score_summary(
     individual: dict[str, np.ndarray],
     weights: Optional[dict[str, float]] = None,
 ) -> str:
-    """Return a formatted string summarising per-objective score statistics."""
+    """
+    Return a formatted table summarising per-objective score statistics.
+
+    Columns: Objective | Weight | Min | p25 | Median | p75 | Max
+    """
     w = {**DEFAULT_WEIGHTS, **(weights or {})}
     total_w = sum(w.values())
     w = {k: v / total_w for k, v in w.items()}
 
-    lines = [
-        f"  {'Objective':<20} {'Weight':>6}  {'Min':>6}  {'Mean':>6}  {'Max':>6}",
-        "  " + "-" * 54,
-    ]
+    header = (
+        f"  {'Objective':<20} {'Weight':>6}  "
+        f"{'Min':>6}  {'p25':>6}  {'p50':>6}  {'p75':>6}  {'Max':>6}"
+    )
+    lines = [header, "  " + "-" * 66]
+
     for name, arr in individual.items():
+        p25, p50, p75 = np.percentile(arr, [25, 50, 75])
         lines.append(
             f"  {name:<20} {w.get(name, 0):.3f}   "
-            f"{arr.min():.4f}   {arr.mean():.4f}   {arr.max():.4f}"
+            f"{arr.min():.4f}   {p25:.4f}   {p50:.4f}   {p75:.4f}   {arr.max():.4f}"
         )
     return "\n".join(lines)
 
