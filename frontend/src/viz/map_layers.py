@@ -25,10 +25,12 @@ def _grid_to_latlon(
     rows: np.ndarray,
     cols: np.ndarray,
     bounds: dict,
+    grid_rows: int = 500,
+    grid_cols: int = 500,
 ) -> tuple[np.ndarray, np.ndarray]:
     """Map (row, col) grid indices to (lat, lon) geographic coordinates."""
-    lats = bounds["north"] - (rows / 500.0) * (bounds["north"] - bounds["south"])
-    lons = bounds["west"]  + (cols / 500.0) * (bounds["east"]  - bounds["west"])
+    lats = bounds["north"] - (rows / grid_rows) * (bounds["north"] - bounds["south"])
+    lons = bounds["west"]  + (cols / grid_cols) * (bounds["east"]  - bounds["west"])
     return lats, lons
 
 
@@ -53,9 +55,10 @@ def build_demand_layer(heatmap: np.ndarray, bounds: dict) -> go.Scattermapbox:
     Render demand intensity as a scatter heatmap (~2 000 sampled points).
     Blue = low demand  →  Red = high demand.
     """
+    gr, gc = heatmap.shape
     rows, cols = np.where(heatmap > 0)
     rows, cols = _sample(rows, cols, n=2_000)
-    lats, lons = _grid_to_latlon(rows, cols, bounds)
+    lats, lons = _grid_to_latlon(rows, cols, bounds, gr, gc)
     values = heatmap[rows, cols].tolist()
 
     return go.Scattermapbox(
@@ -97,9 +100,10 @@ def build_forbidden_layer(mask: np.ndarray, bounds: dict) -> go.Scattermapbox:
     Render forbidden/infeasible zones as faint red dots (~500 sampled points).
     mask == 0  →  forbidden cell.
     """
+    gr, gc = mask.shape
     rows, cols = np.where(mask == 0)
     rows, cols = _sample(rows, cols, n=500, seed=43)
-    lats, lons = _grid_to_latlon(rows, cols, bounds)
+    lats, lons = _grid_to_latlon(rows, cols, bounds, gr, gc)
 
     return go.Scattermapbox(
         lat=lats.tolist(),
@@ -118,7 +122,7 @@ def build_forbidden_layer(mask: np.ndarray, bounds: dict) -> go.Scattermapbox:
 
 def build_substations_layer(geojson: dict) -> go.Scattermapbox:
     """
-    Render existing substation locations as black diamonds with name hover.
+    Render existing substation locations as white markers with name hover.
     GeoJSON feature coordinates are [lon, lat].
     """
     features = geojson.get("features", [])
@@ -127,7 +131,8 @@ def build_substations_layer(geojson: dict) -> go.Scattermapbox:
 
     lats  = [f["geometry"]["coordinates"][1] for f in features]
     lons  = [f["geometry"]["coordinates"][0] for f in features]
-    names = [f.get("properties", {}).get("name", "Substation") for f in features]
+    names = [f.get("properties", {}).get("NAME",
+             f.get("properties", {}).get("name", "Substation")) for f in features]
 
     return go.Scattermapbox(
         lat=lats,
@@ -136,7 +141,7 @@ def build_substations_layer(geojson: dict) -> go.Scattermapbox:
         marker=dict(
             size=14,
             color="#ffffff",
-            symbol="marker",           # mapbox doesn't support 'diamond' symbol inline
+            symbol="marker",
             opacity=0.95,
         ),
         text=names,
@@ -154,10 +159,7 @@ def build_substations_layer(geojson: dict) -> go.Scattermapbox:
 def build_candidates_layer(candidates: list[dict]) -> go.Scattermapbox:
     """
     Render top candidate placements as colored stars.
-
-    Size   → scaled by rank (rank 1 = largest)
-    Color  → feasibility: HIGH=green, MEDIUM=amber, LOW=red
-    Hover  → rank, score, feasibility, reasoning
+    Size → scaled by rank. Color → feasibility.
     """
     if not candidates:
         return go.Scattermapbox(lat=[], lon=[], name="Candidate Sites")
@@ -165,7 +167,8 @@ def build_candidates_layer(candidates: list[dict]) -> go.Scattermapbox:
     lats   = [c["lat"]  for c in candidates]
     lons   = [c["lon"]  for c in candidates]
     sizes  = [max(10, 24 - (c.get("rank", 1) - 1) * 2) for c in candidates]
-    colors = [FEASIBILITY_COLORS.get(c.get("feasibility", ""), _FALLBACK_COLOR) for c in candidates]
+    colors = [FEASIBILITY_COLORS.get(c.get("feasibility", ""), _FALLBACK_COLOR)
+              for c in candidates]
 
     hover_texts = []
     for c in candidates:
@@ -173,9 +176,8 @@ def build_candidates_layer(candidates: list[dict]) -> go.Scattermapbox:
         fcolor = FEASIBILITY_COLORS.get(f, _FALLBACK_COLOR)
         score  = c.get("composite_score", 0)
         reason = c.get("reasoning", "No analysis available.")
-        # Truncate long reasoning for hover card legibility
         if len(reason) > 180:
-            reason = reason[:177] + "…"
+            reason = reason[:177] + "..."
         hover_texts.append(
             f"<b>Rank #{c.get('rank', '?')}</b>  ·  "
             f"<span style='color:{fcolor}'><b>{f}</b></span><br>"
