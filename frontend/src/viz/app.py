@@ -55,11 +55,24 @@ _proc_lock  = threading.Lock()
 _proc_state: dict = {"status": "idle", "log": ""}   # idle | running | done | error
 
 
+def _stream_proc(proc, lines: list[str]) -> None:
+    """Stream subprocess stdout into lines list, updating _proc_state log."""
+    for line in proc.stdout:
+        line = line.rstrip()
+        if line.strip():
+            lines.append(line)
+            with _proc_lock:
+                _proc_state["log"] = "\n".join(lines[-6:])
+    proc.wait()
+
+
 def _run_optimizer_bg() -> None:
     """
-    Background thread: run GPU optimizer against the best available data,
+    Background thread: run GPU optimizer then Claude feasibility analysis,
     then copy outputs to frontend/data/ and frontend/results/.
     """
+    import os as _os
+
     with _proc_lock:
         _proc_state["status"] = "running"
         _proc_state["log"]    = "Locating input data..."
@@ -76,47 +89,75 @@ def _run_optimizer_bg() -> None:
         bounds_path  = src_data / "city_bounds.json"
 
         RESULTS.mkdir(parents=True, exist_ok=True)
-        out_path = RESULTS / "top_candidates.json"
+        gpu_out = RESULTS / "top_candidates_gpu.json"
 
+        # ── Step 1: GPU optimizer ─────────────────────────────────────────────
         cmd = [
             sys.executable, "-m", "src.optimizer.run",
             "--mask",        str(mask_path),
             "--heatmap",     str(heatmap_path),
             "--substations", str(subs_path),
             "--bounds",      str(bounds_path),
-            "--output",      str(out_path),
+            "--output",      str(gpu_out),
         ]
 
         with _proc_lock:
-            _proc_state["log"] = "Running optimizer..."
+            _proc_state["log"] = "Running GPU optimizer..."
 
         proc = subprocess.Popen(
-            cmd,
-            cwd=str(GPU_DIR),
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
+            cmd, cwd=str(GPU_DIR),
+            stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+            text=True, encoding="utf-8", errors="replace",
         )
-
         lines: list[str] = []
-        for line in proc.stdout:
-            line = line.rstrip()
-            if line.strip():
-                lines.append(line)
-                with _proc_lock:
-                    _proc_state["log"] = "\n".join(lines[-6:])
-
-        proc.wait()
+        _stream_proc(proc, lines)
 
         if proc.returncode != 0:
             with _proc_lock:
                 _proc_state["status"] = "error"
-                _proc_state["log"]    = "Optimizer exited with errors. Check console."
+                _proc_state["log"]    = "GPU optimizer exited with errors. Check console."
             return
 
-        # Sync input data to frontend/data/ so the map layers stay in sync
+        # ── Step 2: Claude feasibility (if API key available) ─────────────────
+        api_key     = _os.environ.get("ANTHROPIC_API_KEY", "")
+        site_dir    = REPO_ROOT / "sitereliability"
+        final_out   = RESULTS / "top_candidates.json"
+
+        if api_key and gpu_out.exists():
+            with _proc_lock:
+                _proc_state["log"] = "Running Claude feasibility analysis..."
+
+            # Read city from city_bounds or default to Austin
+            city = "Austin, Texas, USA"
+            city_meta = src_data / "city_meta.json"
+            if city_meta.exists():
+                try:
+                    meta = json.loads(city_meta.read_text(encoding="utf-8"))
+                    city = meta.get("city", city)
+                except Exception:
+                    pass
+
+            cmd_ai = [
+                sys.executable, "-m", "src.agent.feasibility",
+                "--candidates", str(gpu_out),
+                "--output",     str(final_out),
+                "--city",       city,
+            ]
+            proc2 = subprocess.Popen(
+                cmd_ai, cwd=str(site_dir),
+                stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                text=True, encoding="utf-8", errors="replace",
+            )
+            _stream_proc(proc2, lines)
+
+            if proc2.returncode != 0 or not final_out.exists():
+                # Fall back to GPU output without AI enrichment
+                shutil.copy2(gpu_out, final_out)
+        else:
+            # No API key — use GPU optimizer output directly
+            shutil.copy2(gpu_out, final_out)
+
+        # ── Step 3: Sync input data to frontend/data/ ─────────────────────────
         DATA.mkdir(parents=True, exist_ok=True)
         for fname in ("forbidden_mask.npy", "demand_heatmap.npy",
                       "existing_substations.geojson", "city_bounds.json"):
@@ -126,7 +167,7 @@ def _run_optimizer_bg() -> None:
 
         with _proc_lock:
             _proc_state["status"] = "done"
-            _proc_state["log"]    = "Optimization complete."
+            _proc_state["log"]    = "Pipeline complete."
 
     except Exception as exc:
         with _proc_lock:
@@ -150,17 +191,35 @@ def _load_json(path: Path, fallback):
 
 def _normalize_candidates(raw: list) -> list:
     """
-    Add 'feasibility' and 'reasoning' fields if missing.
-    The GPU optimizer outputs composite_score + per-objective scores;
-    the frontend needs feasibility label + human-readable reasoning.
+    Normalize candidates from any schema into a flat dict the frontend can consume.
+
+    Handles two schemas:
+    1. GPU optimizer only — composite_score + per-objective scores, no feasibility
+    2. Sitereliability-enriched — adds a nested 'feasibility' dict with verdict + fields
     """
+    # raw may be a list or a dict with a 'candidates' key (sensitivity analysis output)
+    if isinstance(raw, dict):
+        raw = raw.get("candidates", [])
+
     out = []
     for c in raw:
         c = dict(c)
         score = float(c.get("composite_score", c.get("score", 0)))
         c["composite_score"] = score
 
-        if "feasibility" not in c:
+        # Unwrap nested feasibility dict (sitereliability output)
+        feas_obj = c.get("feasibility")
+        if isinstance(feas_obj, dict):
+            verdict = feas_obj.get("feasibility", "UNKNOWN")
+            c["feasibility"]           = verdict
+            c["reasoning"]             = feas_obj.get("reasoning", "")
+            c["land_use"]              = feas_obj.get("land_use", "")
+            c["zoning_assessment"]     = feas_obj.get("zoning_assessment", "")
+            c["environmental_flags"]   = feas_obj.get("environmental_flags", [])
+            c["community_sensitivity"] = feas_obj.get("community_sensitivity", "")
+            c["grid_proximity"]        = feas_obj.get("grid_proximity", "")
+        elif not isinstance(feas_obj, str) or not feas_obj:
+            # No feasibility at all — derive from score
             if score >= 0.55:
                 c["feasibility"] = "HIGH"
             elif score >= 0.40:
@@ -168,7 +227,7 @@ def _normalize_candidates(raw: list) -> list:
             else:
                 c["feasibility"] = "LOW"
 
-        if "reasoning" not in c:
+        if "reasoning" not in c or not c["reasoning"]:
             parts = [f"Composite score {score:.3f}."]
             if c.get("nearest_existing_km") is not None:
                 parts.append(f"{c['nearest_existing_km']:.1f} km from nearest substation.")
@@ -569,6 +628,32 @@ def update_feasibility_report(idx):
                                       style={"color": _TEXT_SEC, "fontSize": "11px",
                                              "marginRight": "12px"}))
 
+    # Site intelligence fields (from sitereliability)
+    site_rows = []
+    for key, label in [("land_use",              "Land Use"),
+                       ("zoning_assessment",      "Zoning"),
+                       ("community_sensitivity",  "Community Sensitivity"),
+                       ("grid_proximity",         "Grid Proximity")]:
+        val = c.get(key, "")
+        if val:
+            site_rows.append(html.Div([
+                html.Span(label, style={"color": _TEXT_SEC, "fontSize": "11px",
+                                        "fontWeight": "600", "minWidth": "110px"}),
+                html.Span(str(val), style={"color": _TEXT_BODY, "fontSize": "11px",
+                                            "flex": "1", "textAlign": "right"}),
+            ], style={"display": "flex", "justifyContent": "space-between",
+                      "padding": "3px 0", "borderBottom": f"1px solid {_BORDER}"}))
+
+    env_flags = c.get("environmental_flags", [])
+    if env_flags:
+        site_rows.append(html.Div([
+            html.Span("Env. Flags", style={"color": _TEXT_SEC, "fontSize": "11px",
+                                            "fontWeight": "600"}),
+            html.Span(", ".join(env_flags), style={"color": "#ffd600", "fontSize": "11px",
+                                                     "textAlign": "right", "flex": "1"}),
+        ], style={"display": "flex", "justifyContent": "space-between",
+                  "padding": "3px 0", "borderBottom": f"1px solid {_BORDER}"}))
+
     return html.Div([
         html.Div([
             html.Span(f"Rank #{rank}",
@@ -592,6 +677,13 @@ def update_feasibility_report(idx):
 
         *([html.Div(metrics, style={"marginBottom": "10px"})] if metrics else []),
         *([html.Div(coverage, style={"marginBottom": "10px"})] if coverage else []),
+
+        *([html.Div([
+            html.Div("SITE INTELLIGENCE", style={"color": _TEXT_SEC, "fontSize": "10px",
+                                                   "fontWeight": "700", "letterSpacing": "1px",
+                                                   "marginBottom": "6px"}),
+            *site_rows,
+        ], style={"marginBottom": "10px"})] if site_rows else []),
 
         html.Hr(style={"borderColor": _BORDER, "margin": "8px 0 10px"}),
         html.Div("AI ANALYSIS", style={"color": _TEXT_SEC, "fontSize": "10px",
