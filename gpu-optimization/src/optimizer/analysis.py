@@ -171,7 +171,8 @@ def coverage_analysis(
     -------
     New list of candidate dicts with coverage keys added.
     """
-    lat_grid, lon_grid = _make_lat_lon_grids(city_bounds)
+    rows, cols = np.asarray(demand_heatmap).shape
+    lat_grid, lon_grid = _make_lat_lon_grids(city_bounds, rows, cols)
     total_demand = float(demand_heatmap.sum())
     total_demand = max(total_demand, 1e-9)  # avoid division by zero
 

@@ -254,7 +254,8 @@ def load_relief_score(
     Returns a (500, 500) array normalized to [0, 1], on the active backend.
     """
     demand_np = _to_numpy(demand_heatmap)
-    lat_grid, lon_grid = _make_lat_lon_grids(city_bounds)
+    rows, cols = demand_np.shape
+    lat_grid, lon_grid = _make_lat_lon_grids(city_bounds, rows, cols)
     sub_lats, sub_lons = _extract_substations(existing_substations)
 
     if len(sub_lats) == 0:
@@ -323,7 +324,7 @@ def loss_reduction_score(
 # Objective 3 — Sustainability
 # ---------------------------------------------------------------------------
 
-def sustainability_score(city_bounds: dict) -> ArrayLike:
+def sustainability_score(city_bounds: dict, rows: int = _GRID_SIZE, cols: int = _GRID_SIZE) -> ArrayLike:
     """
     Proxy for renewable integration potential, anchored to NREL solar irradiance data.
 
@@ -345,7 +346,7 @@ def sustainability_score(city_bounds: dict) -> ArrayLike:
     west, east = city_bounds["west"], city_bounds["east"]
     center_lat = (north + south) / 2.0
     center_lon = (west + east) / 2.0
-    rows = cols = _GRID_SIZE
+    # rows/cols come from the parameter (default _GRID_SIZE for backward-compat)
 
     # --- Fetch or retrieve cached GHI ---
     cache_key = f"{center_lat:.3f},{center_lon:.3f}"
@@ -391,6 +392,8 @@ def sustainability_score(city_bounds: dict) -> ArrayLike:
 def redundancy_score(
     existing_substations: dict,
     city_bounds: dict,
+    rows: int = _GRID_SIZE,
+    cols: int = _GRID_SIZE,
 ) -> ArrayLike:
     """
     Rewards locations that are optimally spaced from existing substations.
@@ -405,12 +408,12 @@ def redundancy_score(
 
     Returns a (500, 500) array normalized to [0, 1], on the active backend.
     """
-    lat_grid, lon_grid = _make_lat_lon_grids(city_bounds)
+    lat_grid, lon_grid = _make_lat_lon_grids(city_bounds, rows, cols)
     sub_lats, sub_lons = _extract_substations(existing_substations)
 
     if len(sub_lats) == 0:
         # No existing substations → uniform score (any spacing is valid)
-        uniform = np.full((_GRID_SIZE, _GRID_SIZE), 0.5, dtype=np.float32)
+        uniform = np.full((rows, cols), 0.5, dtype=np.float32)
         return _to_backend(uniform)
 
     min_dist_m = _min_dist_to_substations_m(lat_grid, lon_grid, sub_lats, sub_lons)

@@ -140,3 +140,6 @@ __pycache__/
 *.py[cod]
 *.pyo
 .Python
+
+# macOS
+.DS_Store

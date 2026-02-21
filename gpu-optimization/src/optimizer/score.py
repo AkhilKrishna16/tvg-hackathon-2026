@@ -121,12 +121,16 @@ def composite_score(
     timings: dict[str, float] = {}
     individual: dict[str, np.ndarray] = {}
 
+    # Derive actual grid shape from the demand array so all objectives match
+    demand_arr = _to_numpy(demand_heatmap)
+    grid_rows, grid_cols = demand_arr.shape
+
     # Map objective names → (function, positional args)
     objective_fns: dict[str, tuple] = {
         "load_relief":    (load_relief_score,    (demand_heatmap, existing_substations, city_bounds)),
         "loss_reduction": (loss_reduction_score, (demand_heatmap, existing_substations, city_bounds)),
-        "sustainability": (sustainability_score, (city_bounds,)),
-        "redundancy":     (redundancy_score,     (existing_substations, city_bounds)),
+        "sustainability": (sustainability_score, (city_bounds, grid_rows, grid_cols)),
+        "redundancy":     (redundancy_score,     (existing_substations, city_bounds, grid_rows, grid_cols)),
     }
 
     if parallel:
@@ -151,7 +155,7 @@ def composite_score(
 
     # --- Weighted aggregation ---
     t0 = time.perf_counter()
-    composite = np.zeros((500, 500), dtype=np.float32)
+    composite = np.zeros((grid_rows, grid_cols), dtype=np.float32)
     for name, arr in individual.items():
         composite += w[name] * arr
 
