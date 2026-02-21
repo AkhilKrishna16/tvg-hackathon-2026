@@ -8,6 +8,9 @@ scipy>=1.10
 # Visualization
 matplotlib>=3.7
 
+# HTTP client (used by fetch_real_data.py for OSM/Census APIs)
+requests>=2.28
+
 # Development / testing
 pytest>=7.4
 pytest-benchmark>=4.0
