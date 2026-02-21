@@ -6,12 +6,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.78782390401432,
-          30.491354885431242
+          -118.283028,
+          34.0341613
         ]
       },
       "properties": {
-        "NAME": "Avery Ranch Substation",
+        "NAME": "Distributing Station 31",
         "SOURCE": "OSM"
       }
     },
@@ -20,12 +20,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.72378545201192,
-          30.398129384228067
+          -118.47854107503856,
+          34.280530084210156
         ]
       },
       "properties": {
-        "NAME": "Summit Substation",
+        "NAME": "Rinaldi Receiving Station",
         "SOURCE": "OSM"
       }
     },
@@ -34,12 +34,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.72530065000001,
-          30.38958235
+          -118.52649551268819,
+          34.04824539077176
         ]
       },
       "properties": {
-        "NAME": "PRC Transformer House #6",
+        "NAME": "Distributing Station 29",
         "SOURCE": "OSM"
       }
     },
@@ -48,12 +48,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.64304389226999,
-          30.373491339421367
+          -118.48594989892143,
+          34.31140377238408
         ]
       },
       "properties": {
-        "NAME": "Dessau Substation",
+        "NAME": "Sylmar Converter Station",
         "SOURCE": "OSM"
       }
     },
@@ -62,12 +62,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.73292035763227,
-          30.27273124743364
+          -118.3918858269265,
+          34.24307991251095
         ]
       },
       "properties": {
-        "NAME": "Brackenridge Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -76,12 +76,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.72111212370108,
-          30.249988924930424
+          -118.32131227345668,
+          34.259284008573346
         ]
       },
       "properties": {
-        "NAME": "Pedernales Substation",
+        "NAME": "Distributing Station 72",
         "SOURCE": "OSM"
       }
     },
@@ -90,12 +90,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.89461979567882,
-          30.179978323283617
+          -118.54372818441074,
+          34.17932844232246
         ]
       },
       "properties": {
-        "NAME": "Escarpment Substation",
+        "NAME": "Receiving Station U - Tarzana",
         "SOURCE": "OSM"
       }
     },
@@ -104,12 +104,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68501918207757,
-          30.31304984681741
+          -118.5190129639446,
+          34.19344201723449
         ]
       },
       "properties": {
-        "NAME": "Wheless Lane Substation",
+        "NAME": "LADWP Distributing Station No. 127",
         "SOURCE": "OSM"
       }
     },
@@ -118,12 +118,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.75135891541956,
-          30.266824475348347
+          -118.52562789291801,
+          34.16543648573127
         ]
       },
       "properties": {
-        "NAME": "Seaholm Substation",
+        "NAME": "DISTRIBUTING STATION 78",
         "SOURCE": "OSM"
       }
     },
@@ -132,12 +132,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.77756988463635,
-          30.400563178718148
+          -118.49317219024657,
+          34.25797632427409
         ]
       },
       "properties": {
-        "NAME": "Angus Valley Substation",
+        "NAME": "LADWP Distributing Station No. 92",
         "SOURCE": "OSM"
       }
     },
@@ -146,12 +146,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.842263,
-          30.398688450000005
+          -118.4841199701185,
+          34.19359376131492
         ]
       },
       "properties": {
-        "NAME": "Riverplace Substation",
+        "NAME": "LADWP Distributing Station No. 60",
         "SOURCE": "OSM"
       }
     },
@@ -160,12 +160,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.81947301876899,
-          30.266117949261783
+          -118.4852022717468,
+          34.27161583693228
         ]
       },
       "properties": {
-        "NAME": "Barton Substation",
+        "NAME": "LADWP Distributing Station No. 142",
         "SOURCE": "OSM"
       }
     },
@@ -174,12 +174,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.7900278631634,
-          30.215785598443073
+          -118.25533679499378,
+          33.94798010470111
         ]
       },
       "properties": {
-        "NAME": "Salem Walk Substation",
+        "NAME": "Receiving Station B",
         "SOURCE": "OSM"
       }
     },
@@ -188,12 +188,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.87048554918196,
-          30.23827271394877
+          -118.42531989385232,
+          33.91901605197204
         ]
       },
       "properties": {
-        "NAME": "Patton Lane Substation",
+        "NAME": "Scattergood Substation",
         "SOURCE": "OSM"
       }
     },
@@ -202,12 +202,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.67253903075988,
-          30.219032689964013
+          -118.35974217346887,
+          34.17605526908407
         ]
       },
       "properties": {
-        "NAME": "Bergstrom Substation",
+        "NAME": "Receiving Station E - Toluca",
         "SOURCE": "OSM"
       }
     },
@@ -216,12 +216,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.78440365370147,
-          30.29327791340285
+          -118.30187454092739,
+          33.84710552316276
         ]
       },
       "properties": {
-        "NAME": "Austin Dam Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -230,12 +230,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.78951716538914,
-          30.293859305058152
+          -118.30344985093306,
+          33.84773360792884
         ]
       },
       "properties": {
-        "NAME": "Bee Creek Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -244,12 +244,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68721398889447,
-          30.265292640786267
+          -118.54354632243843,
+          34.229345143615895
         ]
       },
       "properties": {
-        "NAME": "Kingsbery Substation",
+        "NAME": "LADWP Receiving Station J - Northridge",
         "SOURCE": "OSM"
       }
     },
@@ -258,12 +258,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68710033986902,
-          30.203234658992475
+          -118.37964069518569,
+          34.19123967689125
         ]
       },
       "properties": {
-        "NAME": "Carson Creek Substation",
+        "NAME": "DISTRIBUTING STATION 85",
         "SOURCE": "OSM"
       }
     },
@@ -272,12 +272,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.8682554285809,
-          30.242253395329286
+          -118.26493896983446,
+          33.770344247911375
         ]
       },
       "properties": {
-        "NAME": "Vega Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -286,12 +286,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.72261708311487,
-          30.37331350863301
+          -118.25808859287491,
+          33.797819176076665
         ]
       },
       "properties": {
-        "NAME": "Magnesium Plant Substation",
+        "NAME": "Receiving Station C",
         "SOURCE": "OSM"
       }
     },
@@ -300,12 +300,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.74415299615409,
-          30.400827820209333
+          -118.2261596456229,
+          34.0670853942185
         ]
       },
       "properties": {
-        "NAME": "Hamilton Substation",
+        "NAME": "Receiving Station A",
         "SOURCE": "OSM"
       }
     },
@@ -314,12 +314,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.74159306179911,
-          30.367260694190325
+          -118.4586765904487,
+          34.273473205879284
         ]
       },
       "properties": {
-        "NAME": "Steck Substation",
+        "NAME": "San Fernando Substation",
         "SOURCE": "OSM"
       }
     },
@@ -328,12 +328,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.65316780108006,
-          30.274024611697584
+          -118.55616074177486,
+          34.271286150768915
         ]
       },
       "properties": {
-        "NAME": "Walnut Creek Substation",
+        "NAME": "Distributing Station No. 82",
         "SOURCE": "OSM"
       }
     },
@@ -342,12 +342,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.61415050000001,
-          30.3049807
+          -118.23785494474157,
+          34.038874794765015
         ]
       },
       "properties": {
-        "NAME": "Decker Switchyard",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -356,12 +356,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68955664444393,
-          30.289950578297262
+          -118.33781993353858,
+          34.124169448928626
         ]
       },
       "properties": {
-        "NAME": "Mueller Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -370,12 +370,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.66209784240544,
-          30.27053655983241
+          -118.25438280908641,
+          34.10943956878481
         ]
       },
       "properties": {
-        "NAME": "Ed Bluestein Substation",
+        "NAME": "Receiving Station G - Atwater",
         "SOURCE": "OSM"
       }
     },
@@ -384,12 +384,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.76880879999999,
-          30.2337676
+          -118.38505070000002,
+          33.96605615
         ]
       },
       "properties": {
-        "NAME": "Cardinal Lane Substation",
+        "NAME": "Distributing Station 58",
         "SOURCE": "OSM"
       }
     },
@@ -398,12 +398,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.80647593660692,
-          30.374718336205635
+          -118.36585610302217,
+          34.0254491903181
         ]
       },
       "properties": {
-        "NAME": "Jett Substation",
+        "NAME": "Distributing Station 56",
         "SOURCE": "OSM"
       }
     },
@@ -412,12 +412,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.85949077583957,
-          30.233843598567745
+          -118.22987886536204,
+          34.03762474418705
         ]
       },
       "properties": {
-        "NAME": "Oak Hill Substation",
+        "NAME": "River Switching Station",
         "SOURCE": "OSM"
       }
     },
@@ -426,12 +426,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.69314727392471,
-          30.211019048324005
+          -118.20387322337835,
+          34.0152031579612
         ]
       },
       "properties": {
-        "NAME": "Met Center Substation",
+        "NAME": "Receiving Station F",
         "SOURCE": "OSM"
       }
     },
@@ -440,12 +440,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.72370735165079,
-          30.21471877717787
+          -118.48835915629837,
+          34.06818087773342
         ]
       },
       "properties": {
-        "NAME": "AMD Substation",
+        "NAME": "Kenter Canyon",
         "SOURCE": "OSM"
       }
     },
@@ -454,12 +454,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.71100147428966,
-          30.2164520856149
+          -118.23666422171215,
+          34.039762132332626
         ]
       },
       "properties": {
-        "NAME": "Grove Substation",
+        "NAME": "LADWP Distributing Station No. 144",
         "SOURCE": "OSM"
       }
     },
@@ -468,12 +468,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.73670076591856,
-          30.214663935477454
+          -118.23880959983804,
+          34.03644644610268
         ]
       },
       "properties": {
-        "NAME": "Burleson Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -482,12 +482,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.76906448593658,
-          30.18623422994886
+          -118.47948825936729,
+          34.12974179345357
         ]
       },
       "properties": {
-        "NAME": "Hi Cross Substation",
+        "NAME": "LADWP Distributing Station No. 122",
         "SOURCE": "OSM"
       }
     },
@@ -496,12 +496,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.78156329949509,
-          30.479543323037454
+          -118.47612525479741,
+          34.05106672392299
         ]
       },
       "properties": {
-        "NAME": "Jollyville Substation",
+        "NAME": "Distributing Station 66",
         "SOURCE": "OSM"
       }
     },
@@ -510,12 +510,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68868962152185,
-          30.43317262140908
+          -118.42314884999999,
+          34.1716085
         ]
       },
       "properties": {
-        "NAME": "Howard Lane Substation",
+        "NAME": "DISTRIBUTING STATION 71",
         "SOURCE": "OSM"
       }
     },
@@ -524,12 +524,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.66589434519418,
-          30.41964392782349
+          -118.59628230268163,
+          34.201505105345866
         ]
       },
       "properties": {
-        "NAME": "Tech Ridge Substation",
+        "NAME": "Distributing Station No. 22",
         "SOURCE": "OSM"
       }
     },
@@ -538,12 +538,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.75024243782741,
-          30.437188393967986
+          -118.59168269510609,
+          34.18942617326038
         ]
       },
       "properties": {
-        "NAME": "Williamson Substation",
+        "NAME": "Receiving Station T",
         "SOURCE": "OSM"
       }
     },
@@ -552,12 +552,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68310827308902,
-          30.362150008577554
+          -118.46732076960289,
+          34.07188111852015
         ]
       },
       "properties": {
-        "NAME": "Fiskville Substation",
+        "NAME": "LADWP Distributing Station No. 135",
         "SOURCE": "OSM"
       }
     },
@@ -566,12 +566,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.71614056338055,
-          30.343543354117834
+          -118.44542454889772,
+          34.17982759082733
         ]
       },
       "properties": {
-        "NAME": "Justin Lane Substation",
+        "NAME": "LADWP Receiving Station S / Distributing Station 21",
         "SOURCE": "OSM"
       }
     },
@@ -580,12 +580,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.733894,
-          30.3107185
+          -118.40454809435661,
+          33.93178581835864
         ]
       },
       "properties": {
-        "NAME": "Central Austin Substation",
+        "NAME": "Distributing Station 139",
         "SOURCE": "OSM"
       }
     },
@@ -594,12 +594,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.73020364073844,
-          30.391032163515067
+          -118.45999699276231,
+          34.033193468166154
         ]
       },
       "properties": {
-        "NAME": "Balcones Substation",
+        "NAME": "Receiving Station K - Olympic",
         "SOURCE": "OSM"
       }
     },
@@ -608,12 +608,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.72702830653341,
-          30.32834962755073
+          -118.2677820535218,
+          34.11308598839698
         ]
       },
       "properties": {
-        "NAME": "Koenig Lane Substation",
+        "NAME": "Distributing Station 25",
         "SOURCE": "OSM"
       }
     },
@@ -622,12 +622,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.75472532663511,
-          30.335371273927063
+          -118.28779802013389,
+          34.101402160596194
         ]
       },
       "properties": {
-        "NAME": "Northland Substation",
+        "NAME": "LADWP Distribution Station 54",
         "SOURCE": "OSM"
       }
     },
@@ -636,12 +636,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.84823522847664,
-          30.187698769257484
+          -118.25016855099076,
+          34.050248119001125
         ]
       },
       "properties": {
-        "NAME": "Brodie Lane Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -650,12 +650,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.81150099062808,
-          30.17219507270901
+          -118.25175201946833,
+          34.048557857540615
         ]
       },
       "properties": {
-        "NAME": "Slaughter Lane Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -664,12 +664,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.7582870954594,
-          30.31066151942453
+          -118.37631919996548,
+          33.961897874961345
         ]
       },
       "properties": {
-        "NAME": "Warren Substation",
+        "NAME": "Receiving Station N - Airport",
         "SOURCE": "OSM"
       }
     },
@@ -678,12 +678,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.61710931128786,
-          30.210435390898578
+          -118.4573537829537,
+          34.15195920649045
         ]
       },
       "properties": {
-        "NAME": "Onion Creek Substation",
+        "NAME": "Distributing Station 64",
         "SOURCE": "OSM"
       }
     },
@@ -692,12 +692,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.61408464416272,
-          30.209664284693208
+          -118.4028582,
+          34.279378449999996
         ]
       },
       "properties": {
-        "NAME": "Sand Hill Switchyard",
+        "NAME": "LADWP Distributing Station No. 80",
         "SOURCE": "OSM"
       }
     },
@@ -706,12 +706,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.62435388734978,
-          30.14127386254159
+          -118.22734795679767,
+          33.77882116522288
         ]
       },
       "properties": {
-        "NAME": "Elroy Substation",
+        "NAME": "HarborGen Substation",
         "SOURCE": "OSM"
       }
     },
@@ -720,12 +720,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.71968882549508,
-          30.25089825873495
+          -118.4382504724885,
+          33.95075186099247
         ]
       },
       "properties": {
-        "NAME": "Holly Plant Switchyard",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -734,12 +734,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.73254847268429,
-          30.288254409872064
+          -118.4259564217872,
+          33.931634076966795
         ]
       },
       "properties": {
-        "NAME": "Harris Substation",
+        "NAME": NaN,
         "SOURCE": "OSM"
       }
     },
@@ -748,12 +748,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.71866142939848,
-          30.294975277420747
+          -118.36848593928184,
+          34.0757901193005
         ]
       },
       "properties": {
-        "NAME": "Fiesta Substation",
+        "NAME": "DISTRIBUTING STATION 94",
         "SOURCE": "OSM"
       }
     },
@@ -762,12 +762,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68939031367697,
-          30.393132331640945
+          -118.42097268479638,
+          33.99031434110081
         ]
       },
       "properties": {
-        "NAME": "McNeil Substation",
+        "NAME": "Distributing Station 95",
         "SOURCE": "OSM"
       }
     },
@@ -776,12 +776,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.6891489941852,
-          30.39478372750937
+          -118.37105432647616,
+          34.038102540672426
         ]
       },
       "properties": {
-        "NAME": "McNeil Substation",
+        "NAME": "Receiving Station D - Fairfax",
         "SOURCE": "OSM"
       }
     },
@@ -790,12 +790,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.68638842977245,
-          30.339642135812397
+          -118.31284640039138,
+          33.946484597144966
         ]
       },
       "properties": {
-        "NAME": "Cameron Substation",
+        "NAME": "Gramercy Switching Station",
         "SOURCE": "OSM"
       }
     },
@@ -804,12 +804,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.61539899839717,
-          30.30964291314869
+          -118.34748899473199,
+          34.08814029425312
         ]
       },
       "properties": {
-        "NAME": "Daffan Gin Substation",
+        "NAME": "Receiving Station H - Hollywood",
         "SOURCE": "OSM"
       }
     },
@@ -818,12 +818,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.73796880105164,
-          30.25682400454755
+          -118.4521929573293,
+          34.0474408323989
         ]
       },
       "properties": {
-        "NAME": "Rainey Street Substation",
+        "NAME": "Sawtelle Substation",
         "SOURCE": "OSM"
       }
     },
@@ -832,12 +832,1678 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.70500313460659,
-          30.443240135414538
+          -118.30559395133616,
+          34.05304432650581
         ]
       },
       "properties": {
-        "NAME": "Ashton Woods",
+        "NAME": "DISTRIBUTING STATION 38",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26510200733756,
+          34.01894834469709
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 19",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29074951336604,
+          33.95391039964537
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 14",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29993339391166,
+          34.023946857180704
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 13",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32994652926853,
+          33.98516764117935
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 18",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27247099473624,
+          34.0047133828496
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 32",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33465588701934,
+          34.01161916165705
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 53",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28225071303277,
+          33.98998026336053
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 4",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30864982500034,
+          33.99175418315781
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 45",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28305257522698,
+          33.968674853185064
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 41",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23184072201732,
+          34.02703828928669
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 5",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55739078764775,
+          34.07612931221426
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 99",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46221721013295,
+          33.99818505576986
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 44",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28538216826156,
+          34.082000649086396
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 15",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32577028965214,
+          34.10425598230222
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 52",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42527137223374,
+          34.00882761970549
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station No. 59",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44376126774455,
+          34.04492006569218
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 28",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42543197876263,
+          34.0683993291807
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 46",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32697105011727,
+          34.089149917564384
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 6",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33795968434852,
+          34.10033222443215
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 10",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39331185441561,
+          34.033598719051774
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 20",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26262033438846,
+          34.069171020428286
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 26",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25532052450413,
+          34.05918847008654
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24681927204377,
+          34.04739062476351
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26489034068918,
+          34.046239224363624
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25602485069292,
+          34.03844639314528
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30077221082914,
+          34.05063791517642
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 17",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33044502667788,
+          34.0220194844598
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 39",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36388802931883,
+          34.05128231237219
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 43",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34228113484558,
+          34.04904716842762
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 8",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21134635507181,
+          34.13473236632814
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 30",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1927249479445,
+          34.0353188838435
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 23",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23798896790915,
+          34.057054575614885
+        ]
+      },
+      "properties": {
+        "NAME": "Plaza Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36197701697458,
+          34.15714636806063
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 35",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49473228498788,
+          34.13360610332426
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4133320278002,
+          34.14743698203662
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 49",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52999001822593,
+          34.24201658427363
+        ]
+      },
+      "properties": {
+        "NAME": "Substation D;Cooling Tower",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52781720000003,
+          34.24249040000001
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52539785447095,
+          34.239450240697785
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37321889740866,
+          34.14200863749306
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 98",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5329452299629,
+          34.2000836733787
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP DIstributing Station No. 24",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2848283810749,
+          33.89491675883117
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 143",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5005502302751,
+          34.30532935340388
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 86",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5685253296604,
+          34.241988191645554
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station No. 138",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3690872329091,
+          34.23301481319945
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 102",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41586918281814,
+          34.05289490264216
+        ]
+      },
+      "properties": {
+        "NAME": "DWP Sub 7",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55605346514287,
+          34.20167153441736
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 90",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.59786042695175,
+          34.22905368486909
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5982352,
+          34.229005900000004
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28997381182202,
+          34.25184034177547
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 48",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.47523570810077,
+          34.21881257662683
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41333522523007,
+          34.1039042452213
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 103 and Franklin Power Plant",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.58790995232255,
+          34.256318271406485
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station No. 88",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50064911328654,
+          34.16034655812474
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 130",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48079402624984,
+          34.1554864641071
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 83",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30030451075692,
+          33.78785167038555
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 123",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39360606396265,
+          33.94821416506626
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 111",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.58867964488552,
+          34.167305318204875
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 792",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61103965169646,
+          34.186789877589064
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 136",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.62296868012983,
+          34.16653101803284
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 129",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37535023579446,
+          34.1240386731143
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 115",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.64330704991751,
+          34.18796837949962
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 77",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45915269441592,
+          34.20180397666829
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 81",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4394467532075,
+          34.19445459365376
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 140",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45122268122999,
+          34.23498780466444
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 133",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43994229687206,
+          34.131845204984145
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 124",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39592190357413,
+          34.1706672197569
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 57",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42807221359554,
+          34.027932278112644
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55251264956075,
+          34.160135029910776
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 91",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55289431789951,
+          34.17236005628125
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 65",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42425842408979,
+          34.312143875445464
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 96",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45056571154743,
+          34.30783592687466
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 107",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18945711793212,
+          34.11390994475846
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 2",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27937848766771,
+          33.74951017199344
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 3",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21447236387324,
+          34.08666662706975
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 36",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37622377085722,
+          33.9312437936079
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 47",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1783650673625,
+          34.083092534064264
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 50",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26582497764451,
+          33.77809373360561
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 51",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34657434661625,
+          34.06929868428507
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 55",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29999703500954,
+          34.06381647139483
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 61",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42282677663088,
+          34.20601042962051
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 62",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52876254881033,
+          34.25673720649446
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 68",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45920085225582,
+          34.264069045372224
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 69",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43967841115104,
+          34.15798710896406
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 73",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43378269771071,
+          33.95859479051324
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 137",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50112808164627,
+          34.23625407265589
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 131",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2738288418707,
+          34.052806702222185
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30997298852802,
+          34.08000961975951
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 87",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29299047408747,
+          33.72763169636312
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 89",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.22621621321183,
+          34.1206645116251
+        ]
+      },
+      "properties": {
+        "NAME": "Distributing Station 93",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26876120888377,
+          33.74010893032978
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 121",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38862303882239,
+          34.19420356991181
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 100",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42728203719587,
+          34.26280843851806
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 101",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29144842264286,
+          33.84716898884164
+        ]
+      },
+      "properties": {
+        "NAME": "LADWP Distributing Station No. 105",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38857018594796,
+          34.222726895071524
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 67",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.59844339682031,
+          34.22913994993473
+        ]
+      },
+      "properties": {
+        "NAME": "DISTRIBUTING STATION 74",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2292615892294,
+          33.78896798036111
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48961095556689,
+          34.29982201894162
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35878641152519,
+          34.10558696398215
+        ]
+      },
+      "properties": {
+        "NAME": "Nichols Canyon",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40564350469153,
+          34.029042772265825
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2463921878322,
+          34.04342403097442
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32068263165438,
+          34.086422077107606
+        ]
+      },
+      "properties": {
+        "NAME": "Gower Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41143065171912,
+          34.04978939904988
+        ]
+      },
+      "properties": {
+        "NAME": "DWP Sub B",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39089379274421,
+          34.19448762504217
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31678021363258,
+          34.08536392429131
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31688889143247,
+          34.08547652303329
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33352679024708,
+          34.090567325566084
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1982603873009,
+          34.06881509752572
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26662230000001,
+          33.7603071
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23510059831025,
+          33.79409071966412
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23007555000001,
+          33.7891599
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24008799826872,
+          33.772964451083006
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5879258552114,
+          34.168645080656184
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41346141442439,
+          33.953414775043676
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49298895053474,
+          34.3138195969455
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.43800217663086,
+          33.951466506223156
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4365699302985,
+          33.9514803143783
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29075565655579,
+          33.953935343562435
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39191682546816,
+          34.243060729226976
+        ]
+      },
+      "properties": {
+        "NAME": NaN,
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35880682462405,
+          34.10598811266507
+        ]
+      },
+      "properties": {
+        "NAME": "Nichols Canyon",
         "SOURCE": "OSM"
       }
     }
