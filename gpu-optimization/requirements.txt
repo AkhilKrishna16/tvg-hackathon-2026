@@ -1,0 +1,13 @@
+# Core numerical computing
+numpy>=1.24
+scipy>=1.10
+
+# GPU acceleration (optional — falls back to NumPy if unavailable)
+# cupy-cuda12x>=12.0   # Uncomment and pin to your CUDA version
+
+# Visualization
+matplotlib>=3.7
+
+# Development / testing
+pytest>=7.4
+pytest-benchmark>=4.0

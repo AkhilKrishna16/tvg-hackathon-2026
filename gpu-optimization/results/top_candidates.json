@@ -1,0 +1,102 @@
+[
+  {
+    "rank": 1,
+    "lat": 30.449824,
+    "lon": -97.766088,
+    "composite_score": 0.603453,
+    "load_relief_score": 1.0,
+    "loss_reduction_score": 0.502149,
+    "sustainability_score": 0.37976,
+    "redundancy_score": 0.138248
+  },
+  {
+    "rank": 2,
+    "lat": 30.276425,
+    "lon": -97.743307,
+    "composite_score": 0.501412,
+    "load_relief_score": 0.052753,
+    "loss_reduction_score": 0.998373,
+    "sustainability_score": 0.559118,
+    "redundancy_score": 0.331005
+  },
+  {
+    "rank": 3,
+    "lat": 30.274749,
+    "lon": -97.73517,
+    "composite_score": 0.49553,
+    "load_relief_score": 0.04864,
+    "loss_reduction_score": 0.977538,
+    "sustainability_score": 0.551102,
+    "redundancy_score": 0.358018
+  },
+  {
+    "rank": 4,
+    "lat": 30.277263,
+    "lon": -97.727034,
+    "composite_score": 0.488827,
+    "load_relief_score": 0.024982,
+    "loss_reduction_score": 0.893348,
+    "sustainability_score": 0.538076,
+    "redundancy_score": 0.578004
+  },
+  {
+    "rank": 5,
+    "lat": 30.277263,
+    "lon": -97.751443,
+    "composite_score": 0.484042,
+    "load_relief_score": 0.032531,
+    "loss_reduction_score": 0.925706,
+    "sustainability_score": 0.568136,
+    "redundancy_score": 0.422925
+  },
+  {
+    "rank": 6,
+    "lat": 30.249619,
+    "lon": -97.744934,
+    "composite_score": 0.483258,
+    "load_relief_score": 0.021243,
+    "loss_reduction_score": 0.850164,
+    "sustainability_score": 0.593186,
+    "redundancy_score": 0.595254
+  },
+  {
+    "rank": 7,
+    "lat": 30.291503,
+    "lon": -97.731102,
+    "composite_score": 0.478515,
+    "load_relief_score": 0.013174,
+    "loss_reduction_score": 0.756373,
+    "sustainability_score": 0.526052,
+    "redundancy_score": 0.868439
+  },
+  {
+    "rank": 8,
+    "lat": 30.285639,
+    "lon": -97.724593,
+    "composite_score": 0.473057,
+    "load_relief_score": 0.014972,
+    "loss_reduction_score": 0.763137,
+    "sustainability_score": 0.52505,
+    "redundancy_score": 0.813076
+  },
+  {
+    "rank": 9,
+    "lat": 30.244593,
+    "lon": -97.752257,
+    "composite_score": 0.47074,
+    "load_relief_score": 0.013269,
+    "loss_reduction_score": 0.728266,
+    "sustainability_score": 0.608216,
+    "redundancy_score": 0.799803
+  },
+  {
+    "rank": 10,
+    "lat": 30.283126,
+    "lon": -97.711575,
+    "composite_score": 0.469642,
+    "load_relief_score": 0.00905,
+    "loss_reduction_score": 0.699704,
+    "sustainability_score": 0.512024,
+    "redundancy_score": 0.965163
+  }
+]
