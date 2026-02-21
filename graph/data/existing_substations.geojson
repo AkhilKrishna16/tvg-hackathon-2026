@@ -1,0 +1,845 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.78782390401432,
+          30.491354885431242
+        ]
+      },
+      "properties": {
+        "NAME": "Avery Ranch Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72378545201192,
+          30.398129384228067
+        ]
+      },
+      "properties": {
+        "NAME": "Summit Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72530065000001,
+          30.38958235
+        ]
+      },
+      "properties": {
+        "NAME": "PRC Transformer House #6",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.64304389226999,
+          30.373491339421367
+        ]
+      },
+      "properties": {
+        "NAME": "Dessau Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.73292035763227,
+          30.27273124743364
+        ]
+      },
+      "properties": {
+        "NAME": "Brackenridge Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72111212370108,
+          30.249988924930424
+        ]
+      },
+      "properties": {
+        "NAME": "Pedernales Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.89461979567882,
+          30.179978323283617
+        ]
+      },
+      "properties": {
+        "NAME": "Escarpment Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68501918207757,
+          30.31304984681741
+        ]
+      },
+      "properties": {
+        "NAME": "Wheless Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.75135891541956,
+          30.266824475348347
+        ]
+      },
+      "properties": {
+        "NAME": "Seaholm Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.77756988463635,
+          30.400563178718148
+        ]
+      },
+      "properties": {
+        "NAME": "Angus Valley Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.842263,
+          30.398688450000005
+        ]
+      },
+      "properties": {
+        "NAME": "Riverplace Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.81947301876899,
+          30.266117949261783
+        ]
+      },
+      "properties": {
+        "NAME": "Barton Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7900278631634,
+          30.215785598443073
+        ]
+      },
+      "properties": {
+        "NAME": "Salem Walk Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.87048554918196,
+          30.23827271394877
+        ]
+      },
+      "properties": {
+        "NAME": "Patton Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.67253903075988,
+          30.219032689964013
+        ]
+      },
+      "properties": {
+        "NAME": "Bergstrom Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.78440365370147,
+          30.29327791340285
+        ]
+      },
+      "properties": {
+        "NAME": "Austin Dam Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.78951716538914,
+          30.293859305058152
+        ]
+      },
+      "properties": {
+        "NAME": "Bee Creek Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68721398889447,
+          30.265292640786267
+        ]
+      },
+      "properties": {
+        "NAME": "Kingsbery Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68710033986902,
+          30.203234658992475
+        ]
+      },
+      "properties": {
+        "NAME": "Carson Creek Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8682554285809,
+          30.242253395329286
+        ]
+      },
+      "properties": {
+        "NAME": "Vega Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72261708311487,
+          30.37331350863301
+        ]
+      },
+      "properties": {
+        "NAME": "Magnesium Plant Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.74415299615409,
+          30.400827820209333
+        ]
+      },
+      "properties": {
+        "NAME": "Hamilton Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.74159306179911,
+          30.367260694190325
+        ]
+      },
+      "properties": {
+        "NAME": "Steck Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.65316780108006,
+          30.274024611697584
+        ]
+      },
+      "properties": {
+        "NAME": "Walnut Creek Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.61415050000001,
+          30.3049807
+        ]
+      },
+      "properties": {
+        "NAME": "Decker Switchyard",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68955664444393,
+          30.289950578297262
+        ]
+      },
+      "properties": {
+        "NAME": "Mueller Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.66209784240544,
+          30.27053655983241
+        ]
+      },
+      "properties": {
+        "NAME": "Ed Bluestein Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.76880879999999,
+          30.2337676
+        ]
+      },
+      "properties": {
+        "NAME": "Cardinal Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.80647593660692,
+          30.374718336205635
+        ]
+      },
+      "properties": {
+        "NAME": "Jett Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.85949077583957,
+          30.233843598567745
+        ]
+      },
+      "properties": {
+        "NAME": "Oak Hill Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.69314727392471,
+          30.211019048324005
+        ]
+      },
+      "properties": {
+        "NAME": "Met Center Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72370735165079,
+          30.21471877717787
+        ]
+      },
+      "properties": {
+        "NAME": "AMD Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.71100147428966,
+          30.2164520856149
+        ]
+      },
+      "properties": {
+        "NAME": "Grove Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.73670076591856,
+          30.214663935477454
+        ]
+      },
+      "properties": {
+        "NAME": "Burleson Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.76906448593658,
+          30.18623422994886
+        ]
+      },
+      "properties": {
+        "NAME": "Hi Cross Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.78156329949509,
+          30.479543323037454
+        ]
+      },
+      "properties": {
+        "NAME": "Jollyville Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68868962152185,
+          30.43317262140908
+        ]
+      },
+      "properties": {
+        "NAME": "Howard Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.66589434519418,
+          30.41964392782349
+        ]
+      },
+      "properties": {
+        "NAME": "Tech Ridge Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.75024243782741,
+          30.437188393967986
+        ]
+      },
+      "properties": {
+        "NAME": "Williamson Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68310827308902,
+          30.362150008577554
+        ]
+      },
+      "properties": {
+        "NAME": "Fiskville Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.71614056338055,
+          30.343543354117834
+        ]
+      },
+      "properties": {
+        "NAME": "Justin Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.733894,
+          30.3107185
+        ]
+      },
+      "properties": {
+        "NAME": "Central Austin Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.73020364073844,
+          30.391032163515067
+        ]
+      },
+      "properties": {
+        "NAME": "Balcones Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72702830653341,
+          30.32834962755073
+        ]
+      },
+      "properties": {
+        "NAME": "Koenig Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.75472532663511,
+          30.335371273927063
+        ]
+      },
+      "properties": {
+        "NAME": "Northland Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.84823522847664,
+          30.187698769257484
+        ]
+      },
+      "properties": {
+        "NAME": "Brodie Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.81150099062808,
+          30.17219507270901
+        ]
+      },
+      "properties": {
+        "NAME": "Slaughter Lane Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7582870954594,
+          30.31066151942453
+        ]
+      },
+      "properties": {
+        "NAME": "Warren Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.61710931128786,
+          30.210435390898578
+        ]
+      },
+      "properties": {
+        "NAME": "Onion Creek Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.61408464416272,
+          30.209664284693208
+        ]
+      },
+      "properties": {
+        "NAME": "Sand Hill Switchyard",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.62435388734978,
+          30.14127386254159
+        ]
+      },
+      "properties": {
+        "NAME": "Elroy Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.71968882549508,
+          30.25089825873495
+        ]
+      },
+      "properties": {
+        "NAME": "Holly Plant Switchyard",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.73254847268429,
+          30.288254409872064
+        ]
+      },
+      "properties": {
+        "NAME": "Harris Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.71866142939848,
+          30.294975277420747
+        ]
+      },
+      "properties": {
+        "NAME": "Fiesta Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68939031367697,
+          30.393132331640945
+        ]
+      },
+      "properties": {
+        "NAME": "McNeil Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6891489941852,
+          30.39478372750937
+        ]
+      },
+      "properties": {
+        "NAME": "McNeil Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.68638842977245,
+          30.339642135812397
+        ]
+      },
+      "properties": {
+        "NAME": "Cameron Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.61539899839717,
+          30.30964291314869
+        ]
+      },
+      "properties": {
+        "NAME": "Daffan Gin Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.73796880105164,
+          30.25682400454755
+        ]
+      },
+      "properties": {
+        "NAME": "Rainey Street Substation",
+        "SOURCE": "OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.70500313460659,
+          30.443240135414538
+        ]
+      },
+      "properties": {
+        "NAME": "Ashton Woods",
+        "SOURCE": "OSM"
+      }
+    }
+  ]
+}
