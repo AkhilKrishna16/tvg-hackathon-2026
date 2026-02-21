@@ -8,57 +8,69 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.7560, 30.3070] },
+      "geometry": { "type": "Point", "coordinates": [-97.756, 30.307] },
       "properties": { "name": "North Lamar", "capacity_mva": 80 }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.7200, 30.2350] },
+      "geometry": { "type": "Point", "coordinates": [-97.72, 30.235] },
       "properties": { "name": "South Congress", "capacity_mva": 95 }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.6800, 30.2680] },
+      "geometry": { "type": "Point", "coordinates": [-97.68, 30.268] },
       "properties": { "name": "East Austin", "capacity_mva": 75 }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.8000, 30.2900] },
+      "geometry": { "type": "Point", "coordinates": [-97.8, 30.29] },
       "properties": { "name": "West Austin (Tarrytown)", "capacity_mva": 60 }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.7440, 30.3900] },
-      "properties": { "name": "North Austin (Wells Branch)", "capacity_mva": 110 }
+      "geometry": { "type": "Point", "coordinates": [-97.744, 30.39] },
+      "properties": {
+        "name": "North Austin (Wells Branch)",
+        "capacity_mva": 110
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.8200, 30.2200] },
-      "properties": { "name": "Southwest Austin (Oak Hill)", "capacity_mva": 85 }
+      "geometry": { "type": "Point", "coordinates": [-97.82, 30.22] },
+      "properties": {
+        "name": "Southwest Austin (Oak Hill)",
+        "capacity_mva": 85
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.6900, 30.3500] },
-      "properties": { "name": "Northeast Austin (Windsor Park)", "capacity_mva": 70 }
+      "geometry": { "type": "Point", "coordinates": [-97.69, 30.35] },
+      "properties": {
+        "name": "Northeast Austin (Windsor Park)",
+        "capacity_mva": 70
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.7660, 30.4500] },
+      "geometry": { "type": "Point", "coordinates": [-97.766, 30.45] },
       "properties": { "name": "Pflugerville Border", "capacity_mva": 90 }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.8500, 30.3300] },
+      "geometry": { "type": "Point", "coordinates": [-97.85, 30.33] },
       "properties": { "name": "Bee Caves Rd", "capacity_mva": 65 }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.7300, 30.1600] },
-      "properties": { "name": "South Austin (Slaughter Ln)", "capacity_mva": 100 }
+      "geometry": { "type": "Point", "coordinates": [-97.73, 30.16] },
+      "properties": {
+        "name": "South Austin (Slaughter Ln)",
+        "capacity_mva": 100
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.6400, 30.2300] },
+      "geometry": { "type": "Point", "coordinates": [-97.64, 30.23] },
       "properties": { "name": "Del Valle", "capacity_mva": 55 }
     }
   ]
